@@ -15,3 +15,7 @@
 * [Props and Children](internals/props-and-children.md)
 * [Reagent component state](internals/reagent-component-state.md)
 
+## Interop
+
+* [How Reagent Works](interop/how-reagent-works.md)
+
