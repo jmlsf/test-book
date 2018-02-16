@@ -3,6 +3,7 @@
 ## Overview
 
 * [My Awesome API](README.md)
+* [Props and children](props-and-children.md)
 * [Methods](methods.md)
 * [Defining Methods](methods.md)
 
