@@ -3,9 +3,7 @@
 ## Overview
 
 * [My Awesome API](README.md)
-
-## Methods
-
+* [Methods](methods.md)
 * [Defining Methods](methods.md)
 
 ## Examples
