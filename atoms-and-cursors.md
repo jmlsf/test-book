@@ -19,7 +19,7 @@ The simplest mechanism to isolate re-renders is to create a cursor, which is als
    prompt
    [:input {:value @val
             :on-change #(reset! val (.-target.value %))}]])
-                                                                           
+
 (defn cursor-name-edit [n]
   (let [{:keys [first-name last-name]} @n]
     [:div
