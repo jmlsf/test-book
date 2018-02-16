@@ -2,7 +2,7 @@
 
 ### Creating React Elements directly
 
-The `reagent.core/create-element` function simply calls react's `createElement` function \(and therefore, it expects either a string representing an HTML element or a react Component\).  
+The `reagent.core/create-element` function simply calls react's `createElement` function \(and therefore, it expects either a string representing an HTML element or a react Component\).
 
 As an example, here are four ways to create the same element:
 
@@ -34,7 +34,7 @@ The `reagent.core/as-element` function creates a react element from a Hiccup for
 
 ### Creating Reagent "Components" from React Components
 
-The function `reagent/adapt-react-class` will turn a React Component into something that can be placed into the first position of a Hiccup form, as if it were a Reagent function.  Take, for example the react-flip-move library and assume that it has been properly imported as a react Component called `FlipMove.`
+The function `reagent/adapt-react-class` will turn a React Component into something that can be placed into the first position of a Hiccup form, as if it were a Reagent function.  Take, for example the react-flip-move library and assume that it has been properly imported as a react Component called `FlipMove`.  By wrapping FlipMove with `adapt-react-class`, we can use in in a Hiccup form:
 
 ```
 [(reagent/adapt-react-class FlipMove)
@@ -43,7 +43,14 @@ The function `reagent/adapt-react-class` will turn a React Component into someth
   child-elements]
 ```
 
+There is also a convenience mechanism `:>` \(colon greater-than\) that shortens this and avoid some parenthesis:
 
+```
+[:> FlipMove
+  {:duration 500
+   :easing "ease"}
+  child-elements]
+```
 
 
 
