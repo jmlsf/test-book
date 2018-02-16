@@ -105,5 +105,19 @@ class TopLevelComponent {
 export default DragDropContext(HTML5Backend)(TopLevelComponent);
 ```
 
+### Example: Function-as-child Components
+
+Some React components expect a function as their only child.  React autosizer is one such example.  
+
+
+
+```
+[(reagent/adapt-react-class AutoSizer)
+ {}
+ (fn [dims]
+  (let [dims (js->clj dims :keywordize-keys true)] 
+   (reagent/as-element [my-component (:height dims)])))] 
+```
+
 
 
