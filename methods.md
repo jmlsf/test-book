@@ -1,6 +1,11 @@
-# current-component
+# Getting props and children of current component
 
-## current-component
+Because you just pass argument to reagent functions, you typically don't need to think about "props" and "children" as distinct things.  But reagent does make a distinction and it is helpful to understand this particularly when interoperating with native elements and react libraries.  
+
+Typically one accesses props and children simply by using the arguments passed to the reagent function:
+
+```clojure
+(defn my-div [
 
 reagent.core/current-component returns an object that allows you retrieve the props and children passed to the current component.  
 
