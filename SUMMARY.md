@@ -18,4 +18,5 @@
 ## Interop
 
 * [How Reagent Works](interop/how-reagent-works.md)
+* [React Interop Functions](interop/react-interop-functions.md)
 
